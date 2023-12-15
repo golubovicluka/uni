@@ -1,8 +1,8 @@
 temperatura_vode = float(input("Unesite temperature vode: "))
 
 if temperatura_vode > 0 and temperatura_vode < 100:
-    print("Agregatno stanje je tečno")
+    print(f"Na temperaturi {temperatura_vode} stepeni Celsiusa, agregatno stanje je tečno")
 elif temperatura_vode >= 100:
-    print("Agregatno stanje je gasovito")
+    print(f"Na temperaturi {temperatura_vode} stepeni Celsiusa, agregatno stanje je gasovito")
 else:
-    print("Agregatno stanje je čvrsto")
+    print(f"Na temperaturi {temperatura_vode} stepeni Celsiusa, agregatno stanje je čvrsto")
