@@ -4,6 +4,7 @@ def upisi_brojeve_u_datoteku(ime_datoteke, n):
         datoteka.write(str(i) + '\n')
     datoteka.close()
 
+
 def izracunaj_zbir(ime_datoteke):
     datoteka = open(ime_datoteke, 'r')
     linije = datoteka.readlines()
@@ -15,8 +16,9 @@ def izracunaj_zbir(ime_datoteke):
         zbir = broj1 + broj2
         print(zbir)
 
-ime_datoteke = 'sabiranje_brojeva.txt'
-n = 5
 
-upisi_brojeve_u_datoteku(ime_datoteke, 10)
+ime_datoteke = 'sabiranje_brojeva.txt'
+n = 10
+
+upisi_brojeve_u_datoteku(ime_datoteke, n)
 izracunaj_zbir(ime_datoteke)
